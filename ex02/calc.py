@@ -44,7 +44,7 @@ if __name__ == '__main__':
 
     btn=tk.Button(bt,text="AC",font=("Times New Roman",15))
     btn.bind("<1>",click_alclear)
-    btn.grid(row=6,column=1,padx=10,pady=10)
+    btn.grid(row=6,column=1,padx=10,pady=10) #padxは外側の横の隙間を指定します。padyは外側の縦の隙間を指定します。
 
     btn=tk.Button(bt,text="C",font=("Times New Roman",15),width=3)
     btn.bind("<1>",click_clear)
