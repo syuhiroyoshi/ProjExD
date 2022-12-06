@@ -18,7 +18,7 @@ def key_up(event):
      tkm.showwarning(root," ゴール!!!")#ゴールに到達するとポップアップを表示
 
 def main_proc():
-    global cx, cy, mx, my
+    global  mx, my
     if key == "Up": my -= 1
     if key == "Down": my += 1
     if key == "Left": mx -= 1
