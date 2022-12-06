@@ -17,9 +17,6 @@ def key_up(event):
     if cx==1350 and cy==750 and cl==True:
      tkm.showwarning(root," ゴール!!!")#ゴールに到達するとポップアップを表示
 
-
-
-
 def main_proc():
     global cx, cy, mx, my
     if key == "Up": my -= 1
@@ -34,7 +31,6 @@ def main_proc():
     cx, cy = mx*100+50, my*100+50
     canvas.coords("kokaton", cx, cy)
     root.after(100, main_proc)
-
 
 if __name__ == "__main__":
     root = tk.Tk()
