@@ -16,8 +16,7 @@ def check_bound(obj_rct, scr_rct):
     return yoko, tate
 
 def main():
-    global tmr,tms
-    clock =pg.time.Clock()
+    clock =pg.time.Clock()#時間計測用オブジェクト
     # 練習１
     pg.display.set_caption("逃げろ！こうかとん")
     scrn_sfc = pg.display.set_mode((1280, 720))#ゲーム画面が飛び出さないように、幅と高さを調整した。
@@ -83,7 +82,7 @@ def main():
             return
 
         pg.display.update()
-        clock.tick(1000)
+        clock.tick(1000)#1000fpsの時を刻む
 
 
 if __name__ == "__main__":
