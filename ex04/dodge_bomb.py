@@ -1,9 +1,11 @@
+import tkinter.messagebox
 import tkinter.messagebox as tkm
 import pygame as pg
 import random
 import sys
 
-
+root = tkinter.Tk()
+root.withdraw()
 def check_bound(obj_rct, scr_rct):
     # 第1引数：こうかとんrectまたは爆弾rect
     # 第2引数：スクリーンrect
