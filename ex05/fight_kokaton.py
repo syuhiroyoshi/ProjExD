@@ -106,11 +106,8 @@ def main():
         bkd = Bomb(color_lst[i%5], 10, (random.choice(range(-2, 3)), random.choice(range(-2, 3))), scr)
         bkd_lst.append(bkd)
     # bkd.update(scr)
-
-    # 練習２
     while True:        
         scr.blit()
-
         for event in pg.event.get():
             if event.type == pg.QUIT:
                 return
@@ -124,7 +121,6 @@ def main():
         pg.display.update()
         clock.tick(1000)
     
-
 if __name__ == "__main__":
     pg.init()
     main()
