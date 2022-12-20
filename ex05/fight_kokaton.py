@@ -85,6 +85,8 @@ def check_bound(obj_rct, scr_rct):
         tate = -1
     return yoko, tate
 
+
+
 def load_sound(file): #音楽が出る
     pg.mixer.music.load("boom.wav")
     pg.mixer.music.play(loops=-1,start=0.0)
